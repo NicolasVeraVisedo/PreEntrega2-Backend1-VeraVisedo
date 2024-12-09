@@ -1,0 +1,57 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div>
+      <h1>Add product</h1>
+
+      <form id="formProd" action="/products" method="POST">
+        <label for="title">Título</label>
+        <input type="text" name="title" required />
+        <br />
+
+        <label for="description">Descripción</label>
+        <input type="text" name="description" required />
+        <br />
+
+        <label for="code">Código</label>
+        <input type="text" name="code" required />
+        <br />
+
+        <label for="price">Precio</label>
+        <input type="number" name="price" required min="0" />
+        <br />
+
+        <label for="stock">Stock</label>
+        <input type="number" name="stock" required />
+        <br />
+
+        <label for="category">Categoria</label>
+        <input type="text" name="category" required />
+        <br />
+
+        <button type="submit">Crear</button>
+      </form>
+    </div>
+
+    <ul id="listProd">
+      {{#each products}}
+        <li>
+          <h3>{{title}}</h3>
+          <p>{{description}}</p>
+          <p>Código: {{code}}</p>
+          <p>Precio: {{price}}</p>
+          <p>Stock: {{stock}}</p>
+          <p>Categoría: {{category}}</p>
+        </li>
+      {{/each}}
+    </ul>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/realTimeProducts.js"></script>
+  </body>
+</html>

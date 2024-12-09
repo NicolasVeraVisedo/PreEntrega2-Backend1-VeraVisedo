@@ -1,0 +1,90 @@
+/* Estilos generales */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gI4Nhb1pwGI-5HxDprIO9xqqNEBCUqPkIA&s");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Contenedor de productos */
+#containerProd {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Lista de productos */
+#listProd {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+/* Estilo individual de cada producto */
+#listProd li {
+  background-color: rgba(255, 255, 255, 0.616);
+  align-items: center;
+  border: 1px solid rgb(56, 56, 56);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+}
+
+#listProd li:hover {
+  background-color: rgba(187, 0, 0, 0.541);
+  color: white;
+}
+
+/* Títulos */
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Textos */
+h3,
+p {
+  background-color: rgb(255, 157, 157);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+/* Imágenes */
+img {
+  border-radius: 30px;
+}
+
+/* Formularios */
+form {
+  color: rgb(0, 0, 0);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Campos de entrada */
+input {
+  background-color: rgb(253, 156, 156);
+  height: 30px;
+  width: 150;
+}
+
+/* Botones */
+button {
+  color: rgb(255, 59, 59);
+  background-color: rgb(26, 26, 26);
+  margin-top: 10px;
+  border-radius: 20px;
+}
