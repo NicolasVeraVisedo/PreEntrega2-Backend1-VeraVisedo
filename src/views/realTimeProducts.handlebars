@@ -6,37 +6,44 @@
   </head>
 
   <body>
+    <h1>Productos</h1>
+    <!-- Línea separadora -->
+    <hr class="separator" />
+
     <div>
-      <h1>Add product</h1>
+      <h2>Crear Producto</h2>
 
       <form id="formProd" action="/products" method="POST">
-        <label for="title">Título</label>
+        <label for="title">TÍTULO</label>
         <input type="text" name="title" required />
         <br />
 
-        <label for="description">Descripción</label>
+        <label for="description">DESCRIPCIÓN</label>
         <input type="text" name="description" required />
         <br />
 
-        <label for="code">Código</label>
+        <label for="code">CÓDIGO</label>
         <input type="text" name="code" required />
         <br />
 
-        <label for="price">Precio</label>
+        <label for="price">PRECIO</label>
         <input type="number" name="price" required min="0" />
         <br />
 
-        <label for="stock">Stock</label>
+        <label for="stock">STOCK</label>
         <input type="number" name="stock" required />
         <br />
 
-        <label for="category">Categoria</label>
+        <label for="category">CATEGORIA</label>
         <input type="text" name="category" required />
         <br />
 
-        <button type="submit">Crear</button>
+        <button type="submit">CREAR</button>
       </form>
     </div>
+
+    <!-- Línea separadora -->
+    <hr class="separator" />
 
     <ul id="listProd">
       {{#each products}}

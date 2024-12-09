@@ -46,7 +46,8 @@ body {
 }
 
 /* Títulos */
-h1 {
+h1,
+h2 {
   color: rgb(0, 0, 0);
   text-align: center;
 }
@@ -59,9 +60,12 @@ p {
   padding: 5px;
 }
 
-/* Imágenes */
-img {
-  border-radius: 30px;
+/* Estilos para la línea separadora */
+.separator {
+  border: none;
+  border-top: 5px solid rgb(0, 0, 0);
+  margin: 20px 0;
+  width: 100%;
 }
 
 /* Formularios */
@@ -76,7 +80,7 @@ form {
 
 /* Campos de entrada */
 input {
-  background-color: rgb(253, 156, 156);
+  background-color: rgb(255, 255, 255);
   height: 30px;
   width: 150;
 }
@@ -87,4 +91,6 @@ button {
   background-color: rgb(26, 26, 26);
   margin-top: 10px;
   border-radius: 20px;
+  padding: 15px;
+  cursor: pointer;
 }

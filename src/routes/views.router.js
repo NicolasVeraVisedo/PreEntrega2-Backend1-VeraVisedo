@@ -4,7 +4,7 @@ const router = express.Router();
 
 // Renderiza la vista principal de productos
 router.get("/products", (req, res) => {
-  res.render("home", { title: "Productos" });
+  res.render("products", { title: "Productos" });
 });
 
 // Renderiza la vista de productos en tiempo real
